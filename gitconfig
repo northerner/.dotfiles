@@ -1,0 +1,15 @@
+[user]
+  name = NAME
+  email = EMAIL
+[alias]
+  st = status
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  editor = vim
+[github]
+  user = GITHUB
+[push]
+  default = current

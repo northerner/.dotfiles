@@ -17,3 +17,6 @@ fresh vimrc --file
 fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
 fresh airblade/vim-gitgutter . --file=~/.vim/bundle/vim-gitgutter/
 fresh slim-template/vim-slim . --file=~/.vim/bundle/vim-slim/
+fresh tpope/vim-endwise . --file=~/.vim/bundle/vim-endwise/
+fresh tpope/vim-fugitive . --file=~/.vim/bundle/vim-fugitive/
+fresh bling/vim-airline . --file=~/.vim/bundle/vim-airline/

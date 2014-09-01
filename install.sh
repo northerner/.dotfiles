@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-DIR=~/.dotfiles
+DIR=~/dotfiles
 
 # copy .freshrc to ~
-cp -v ~/.dotfiles/.freshrc ~
+cp -vf ~/dotfiles/.freshrc ~
 
 # install fresh or run for re-fresh
 if [[ -z `which fresh` ]]; then
@@ -14,7 +14,7 @@ fi
 # gitconfig
 if [ -e $HOME/.gitconfig ]
 then echo ".gitconfig found, doing nothing"
-else 
+else
   read -p "Name " name
   read -p "Email " email
   read -p "Github username " github

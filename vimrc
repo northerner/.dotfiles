@@ -21,3 +21,4 @@ let g:airline#extensions#tabline#enabled = 1
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 set cul
 set laststatus=2
+set number

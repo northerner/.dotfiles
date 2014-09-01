@@ -11,6 +11,7 @@
 fresh freshshell/fresh bin/fresh --bin
 fresh bashrc --file
 fresh bash_profile --file
+fresh tmux.conf --file
 fresh git/git contrib/completion/git-prompt.sh
 fresh altercation/vim-colors-solarized colors/solarized.vim --file=~/.vim/colors/solarized.vim
 fresh vimrc --file

@@ -11,6 +11,7 @@ nnoremap <left> :bp<cr>
 let mapleader = ","
 nnoremap ; :
 nnoremap <leader>p :set paste!<cr>
+map <leader>ba :1,300 bd!<cr>
 
 " plugins
 execute pathogen#infect()
@@ -23,3 +24,4 @@ set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 set cul
 set laststatus=2
 set number
+set noswapfile

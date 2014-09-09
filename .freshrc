@@ -8,11 +8,13 @@ fresh tmux.conf --file
 fresh vimrc --file
 
 fresh git/git contrib/completion/git-prompt.sh
+fresh git/git contrib/completion/git-completion.bash
 fresh altercation/vim-colors-solarized colors/solarized.vim --file=~/.vim/colors/solarized.vim
 fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
 fresh airblade/vim-gitgutter . --file=~/.vim/bundle/vim-gitgutter/
 fresh slim-template/vim-slim . --file=~/.vim/bundle/vim-slim/
 fresh tpope/vim-endwise . --file=~/.vim/bundle/vim-endwise/
 fresh tpope/vim-fugitive . --file=~/.vim/bundle/vim-fugitive/
+fresh tpope/vim-sensible . --file=~/.vim/bundle/vim-sensible/
 fresh bling/vim-airline . --file=~/.vim/bundle/vim-airline/
 fresh https://gist.github.com/52983761526950f6d40d.git mkdir.vim --file=~/.vimrc # make dir if missing when saving

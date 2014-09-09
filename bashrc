@@ -3,6 +3,7 @@ source ~/.fresh/build/shell.sh
 
 # aliases
 alias be='bundle exec'
+alias rmds="find . -name '*.DS_Store' -type f -delete"
 
 # prompt
 PROMPT_COMMAND='__git_ps1 "\u @ \w" "\\\$ "'

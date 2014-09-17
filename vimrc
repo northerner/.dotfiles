@@ -1,5 +1,4 @@
 " color scheme
-syntax enable
 set background=dark
 let g:solarized_termcolors=16
 colorscheme solarized

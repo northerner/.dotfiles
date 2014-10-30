@@ -6,6 +6,8 @@ fresh bashrc --file
 fresh bash_profile --file
 fresh tmux.conf --file
 fresh vimrc --file
+fresh gitconfig --file
+fresh gemrc --file
 
 fresh git/git contrib/completion/git-prompt.sh
 fresh git/git contrib/completion/git-completion.bash

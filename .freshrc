@@ -19,4 +19,5 @@ fresh tpope/vim-endwise . --file=~/.vim/bundle/vim-endwise/
 fresh tpope/vim-fugitive . --file=~/.vim/bundle/vim-fugitive/
 fresh tpope/vim-sensible . --file=~/.vim/bundle/vim-sensible/
 fresh bling/vim-airline . --file=~/.vim/bundle/vim-airline/
+fresh bling/vim-commentary . --file=~/.vim/bundle/vim-commentary/
 fresh https://gist.github.com/52983761526950f6d40d.git mkdir.vim --file=~/.vimrc # make dir if missing when saving

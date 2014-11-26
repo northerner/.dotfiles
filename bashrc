@@ -1,6 +1,11 @@
 # fresh
 source ~/.fresh/build/shell.sh
 
+# chruby
+if [ -d "/usr/local/opt/chruby/share/chruby" ]; then
+  source /usr/local/opt/chruby/share/chruby/auto.sh
+fi
+
 # aliases
 alias be='bundle exec'
 alias rmds="find . -name '*.DS_Store' -type f -delete"

@@ -24,3 +24,4 @@ set cul
 set laststatus=2
 set number
 set noswapfile
+set nowrap

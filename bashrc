@@ -2,8 +2,8 @@
 source ~/.fresh/build/shell.sh
 
 # chruby
-if [ -d "/usr/local/opt/chruby/share/chruby" ]; then
-  source /usr/local/opt/chruby/share/chruby/auto.sh
+if [ -d "/usr/local/share/chruby/chruby" ]; then
+  source /usr/local/share/chruby/chruby/auto.sh
 fi
 
 # aliases

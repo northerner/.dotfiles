@@ -3,7 +3,7 @@ source ~/.fresh/build/shell.sh
 
 # chruby
 if [ -d "/usr/local/share/chruby" ]; then
-  source /usr/local/share/chruby/auto.sh
+  source /usr/local/share/chruby/chruby.sh
 fi
 
 # aliases

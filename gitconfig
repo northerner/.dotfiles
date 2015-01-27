@@ -1,15 +1,16 @@
 [user]
-  name = NAME
-  email = EMAIL
+  name = Daniel King
+  email = dan@llamadigital.net
 [alias]
   st = status
 [color]
+  ui = true
   diff = auto
   status = auto
   branch = auto
 [core]
   editor = vim
 [github]
-  user = GITHUB
+  user = northerner
 [push]
   default = current

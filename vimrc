@@ -41,3 +41,5 @@ set laststatus=2
 set number
 set noswapfile
 set nowrap
+set exrc
+set secure

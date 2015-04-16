@@ -43,3 +43,6 @@ set noswapfile
 set nowrap
 set exrc
 set secure
+
+"" syntax
+autocmd BufNewFile,BufRead *.es6 set syntax=javascript

@@ -6,6 +6,17 @@ if [ -d "/usr/local/share/chruby" ]; then
   source /usr/local/share/chruby/chruby.sh
 fi
 
+# rbenv 
+if [ -d "$HOME/.rbenv" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
+# tokens
+if [ -e "$HOME/.tokens" ]; then
+  source "$HOME/.tokens"
+fi
+
 # aliases
 alias be='bundle exec'
 alias rmds="find . -name '*.DS_Store' -type f -delete"

@@ -26,3 +26,4 @@ fresh https://gist.github.com/52983761526950f6d40d.git mkdir.vim --file=~/.vimrc
 fresh ervandew/supertab . --file=~/.vim/bundle/supertab/
 fresh elixir-lang/vim-elixir . --file=~/.vim/bundle/vim-elixir/
 fresh benmills/vimux . --file=~/.vim/bundle/vimux/
+fresh ctrlpvim/ctrlp.vim . --file=~/.vim/bundle/ctrlp.vim/

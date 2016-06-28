@@ -10,6 +10,7 @@ fresh gitconfig --file
 fresh gemrc --file
 fresh Brewfile --file
 fresh tokens --file
+fresh .csirc --file
 
 fresh git/git contrib/completion/git-prompt.sh
 fresh git/git contrib/completion/git-completion.bash
@@ -27,3 +28,4 @@ fresh ervandew/supertab . --file=~/.vim/bundle/supertab/
 fresh elixir-lang/vim-elixir . --file=~/.vim/bundle/vim-elixir/
 fresh benmills/vimux . --file=~/.vim/bundle/vimux/
 fresh ctrlpvim/ctrlp.vim . --file=~/.vim/bundle/ctrlp.vim/
+fresh rust-lang/rust.vim . --file=~/.vim/bundle/rust.vim/

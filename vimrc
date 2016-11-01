@@ -11,6 +11,7 @@ let mapleader = ","
 nnoremap ; :
 nnoremap <leader>p :set paste!<cr>
 map <leader>ba :1,300 bd!<cr>
+inoremap jj <Esc>
 
 " vimux commands
 " Run the current file with rspec

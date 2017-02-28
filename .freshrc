@@ -10,7 +10,6 @@ fresh gitconfig --file
 fresh gemrc --file
 fresh Brewfile --file
 fresh tokens --file
-fresh .csirc --file
 
 fresh git/git contrib/completion/git-prompt.sh
 fresh git/git contrib/completion/git-completion.bash

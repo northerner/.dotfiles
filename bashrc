@@ -3,6 +3,7 @@ source ~/.fresh/build/shell.sh
 
 # chruby
 source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
 # rbenv 
 if [ -d "$HOME/.rbenv" ]; then

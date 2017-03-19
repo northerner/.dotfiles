@@ -12,6 +12,8 @@ nnoremap ; :
 nnoremap <leader>p :set paste!<cr>
 map <leader>ba :1,300 bd!<cr>
 inoremap jj <Esc>
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>
 
 " vimux commands
 " Run the current file with rspec

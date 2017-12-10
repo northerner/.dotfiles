@@ -30,3 +30,4 @@ fresh ctrlpvim/ctrlp.vim . --file=~/.vim/bundle/ctrlp.vim/
 fresh rust-lang/rust.vim . --file=~/.vim/bundle/rust.vim/
 fresh ntpeters/vim-better-whitespace . --file=~/.vim/bundle/vim-better-whitespace/
 fresh sjl/gundo.vim . --file=~/.vim/bundle/gundo.vim/
+fresh idris-hackers/idris-vim . --file=~/.vim/bundle/idris-vim/

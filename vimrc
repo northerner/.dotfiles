@@ -31,13 +31,44 @@ map <Leader>vx :VimuxInterruptRunner<CR>
 " Zoom the runner pane (use <bind-key> z to restore runner pane)
 map <Leader>vz :call VimuxZoomRunner()<CR>
 
+
 " plugins
-execute pathogen#infect()
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-commentary'
+Plug 'ervandew/supertab'
+Plug 'benmills/vimux'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'sjl/gundo.vim'
+
+Plug 'w0rp/ale'
+Plug 'elmcast/elm-vim'
+Plug 'idris-hackers/idris-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'slim-template/vim-slim'
+call plug#end()
+
 highlight clear SignColumn
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 let g:airline#extensions#tabline#enabled = 1
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['prettier']
+
+let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\   'javascript': ['prettier'],
+\}
+let g:airline#extensions#ale#enabled = 1
 
 " settings
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2

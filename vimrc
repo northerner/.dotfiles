@@ -36,6 +36,8 @@ execute pathogen#infect()
 highlight clear SignColumn
 let g:gitgutter_sign_column_always = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
 
 " settings
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2

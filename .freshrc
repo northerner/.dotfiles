@@ -16,7 +16,6 @@ fresh git/git contrib/completion/git-completion.bash
 fresh altercation/vim-colors-solarized colors/solarized.vim --file=~/.vim/colors/solarized.vim
 fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
 fresh airblade/vim-gitgutter . --file=~/.vim/bundle/vim-gitgutter/
-fresh slim-template/vim-slim . --file=~/.vim/bundle/vim-slim/
 fresh tpope/vim-endwise . --file=~/.vim/bundle/vim-endwise/
 fresh tpope/vim-fugitive . --file=~/.vim/bundle/vim-fugitive/
 fresh tpope/vim-sensible . --file=~/.vim/bundle/vim-sensible/
@@ -24,11 +23,15 @@ fresh bling/vim-airline . --file=~/.vim/bundle/vim-airline/
 fresh tpope/vim-commentary . --file=~/.vim/bundle/vim-commentary/
 fresh https://gist.github.com/52983761526950f6d40d.git mkdir.vim --file=~/.vimrc # make dir if missing when saving
 fresh ervandew/supertab . --file=~/.vim/bundle/supertab/
-fresh elixir-lang/vim-elixir . --file=~/.vim/bundle/vim-elixir/
 fresh benmills/vimux . --file=~/.vim/bundle/vimux/
 fresh ctrlpvim/ctrlp.vim . --file=~/.vim/bundle/ctrlp.vim/
-fresh rust-lang/rust.vim . --file=~/.vim/bundle/rust.vim/
 fresh ntpeters/vim-better-whitespace . --file=~/.vim/bundle/vim-better-whitespace/
 fresh sjl/gundo.vim . --file=~/.vim/bundle/gundo.vim/
-fresh idris-hackers/idris-vim . --file=~/.vim/bundle/idris-vim/
+
+# Vim language extensions
+fresh w0rp/ale . --file=~/.vim/bundle/ale/
 fresh elmcast/elm-vim . --file=~/.vim/bundle/elm-vim/
+fresh idris-hackers/idris-vim . --file=~/.vim/bundle/idris-vim/
+fresh rust-lang/rust.vim . --file=~/.vim/bundle/rust.vim/
+fresh elixir-lang/vim-elixir . --file=~/.vim/bundle/vim-elixir/
+fresh slim-template/vim-slim . --file=~/.vim/bundle/vim-slim/

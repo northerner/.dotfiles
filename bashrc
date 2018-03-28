@@ -5,11 +5,14 @@ source ~/.fresh/build/shell.sh
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-# rbenv 
+# rbenv
 if [ -d "$HOME/.rbenv" ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+
+# z - jump around
+. /usr/local/etc/profile.d/z.sh
 
 # tokens
 if [ -e "$HOME/.tokens" ]; then
@@ -38,3 +41,6 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=~/bin:${PATH}
 export PATH=~/.cargo/bin:${PATH}
+export GOPATH="~/go"
+export GOBIN="$GOPATH/bin"
+export PATH=$GOBIN:$PATH

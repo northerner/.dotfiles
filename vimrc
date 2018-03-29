@@ -67,6 +67,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:ale_fixers = {
 \   'ruby': ['rubocop'],
 \   'javascript': ['prettier'],
+\   'markdown': ['write-good'],
 \}
 let g:airline#extensions#ale#enabled = 1
 

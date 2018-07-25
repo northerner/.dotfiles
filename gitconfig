@@ -9,7 +9,7 @@
   status = auto
   branch = auto
 [core]
-  editor = vim
+  editor = nvim
 [github]
   user = northerner
 [push]

@@ -11,6 +11,12 @@ if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
+# asdf
+if [ -d "$HOME/.asdf" ]; then
+  source ~/.asdf/asdf.sh
+  source ~/.asdf/completions/asdf.bash
+fi
+
 # z - jump around
 . /usr/local/etc/profile.d/z.sh
 
@@ -44,3 +50,4 @@ export PATH=~/.cargo/bin:${PATH}
 export GOPATH="~/go"
 export GOBIN="$GOPATH/bin"
 export PATH=$GOBIN:$PATH
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"

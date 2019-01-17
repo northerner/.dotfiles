@@ -1,10 +1,6 @@
 # fresh
 source ~/.fresh/build/shell.sh
 
-# chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-
 # rbenv
 if [ -d "$HOME/.rbenv" ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
@@ -17,8 +13,12 @@ if [ -d "$HOME/.asdf" ]; then
   source ~/.asdf/completions/asdf.bash
 fi
 
-# z - jump around
-. /usr/local/etc/profile.d/z.sh
+# Homebrew shell completion
+if type brew 2&>/dev/null; then
+  . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+else
+  echo "run: brew install git bash-completion"
+fi
 
 # tokens
 if [ -e "$HOME/.tokens" ]; then

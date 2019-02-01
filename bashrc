@@ -29,6 +29,9 @@ fi
 alias be='bundle exec'
 alias rmds="find . -name '*.DS_Store' -type f -delete"
 alias gg='git grep'
+alias gco='git checkout'
+alias gd='git diff'
+alias gs='git status'
 
 # prompt
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'

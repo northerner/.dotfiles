@@ -28,7 +28,7 @@ fi
 # aliases
 alias be='bundle exec'
 alias rmds="find . -name '*.DS_Store' -type f -delete"
-alias gg='git grep'
+alias gg='git grep -n'
 alias gco='git checkout'
 alias gd='git diff'
 alias gs='git status'

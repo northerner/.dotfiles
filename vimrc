@@ -51,6 +51,8 @@ Plug 'benmills/vimux'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'sjl/gundo.vim'
+Plug 'posva/vim-vue'
+Plug 'kchmck/vim-coffee-script'
 
 Plug 'w0rp/ale'
 Plug 'elmcast/elm-vim'

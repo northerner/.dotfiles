@@ -11,6 +11,7 @@ fresh gemrc --file
 fresh Brewfile --file
 fresh tokens --file
 fresh asdfrc --file
+fresh irbrc --file
 
 fresh git/git contrib/completion/git-prompt.sh
 fresh git/git contrib/completion/git-completion.bash

@@ -44,6 +44,7 @@ export CLICOLOR=1
 export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
 export LANGUAGE=en_GB.UTF-8
+export PATH=~/.local/bin
 export PATH="/usr/local/sbin:$PATH"
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools

@@ -13,3 +13,5 @@
   user = northerner
 [push]
   default = current
+[rebase]
+  autosquash = true

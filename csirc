@@ -1,2 +1,0 @@
-(use linenoise)
-(current-input-port (make-linenoise-port))

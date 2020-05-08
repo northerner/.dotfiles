@@ -1,6 +1,3 @@
-# fresh
-source ~/.fresh/build/shell.sh
-
 # rbenv
 if [ -d "$HOME/.rbenv" ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
@@ -34,10 +31,10 @@ alias gd='git diff'
 alias gs='git status'
 
 # prompt
-PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWSTASHSTATE=1
-GIT_PS1_SHOWCOLORHINTS=1
+# PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+# GIT_PS1_SHOWDIRTYSTATE=1
+# GIT_PS1_SHOWSTASHSTATE=1
+# GIT_PS1_SHOWCOLORHINTS=1
 
 # exports
 export CLICOLOR=1

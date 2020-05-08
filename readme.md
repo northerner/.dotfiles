@@ -1,9 +1,9 @@
 # Dotfiles
 
 ## Install
-1. Install [freshshell](http://freshshell.com/) using ``bash -c "`curl -sL get.freshshell.com`"``
+1. Install [stow](https://www.gnu.org/software/stow/)
 2. Clone this repo into your home (~) directory
-3. Run `sh .dotfiles/install.sh`
+3. Install each set of dotfiles as required, for example: `stow bash`
 4. Restart your terminal session
 
 ## Solarized colorscheme

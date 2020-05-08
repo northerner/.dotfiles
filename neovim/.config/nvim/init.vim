@@ -1,7 +1,7 @@
 " color scheme
 set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
+set termguicolors
+colorscheme NeoSolarized
 
 " aliases
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -39,7 +39,9 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin()
+Plug 'iCyMind/NeoSolarized'
+
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'

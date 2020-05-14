@@ -6,6 +6,15 @@
 3. Install each set of dotfiles as required, for example: `stow bash`
 4. Restart your terminal session
 
+### zsh
+The .zshrc file is not commited since it is created and managed by [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh).
+
+These will likely change depending on host, but this theme and set of plugins are a good start.
+'''
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(z asdf git rails systemd)
+'''
+
 ## Solarized colorscheme
 ### Ubuntu
 1. Clone the [Solarized Colorscheme for Gnome Terminal](https://github.com/Anthony25/gnome-terminal-colors-solarized) into your home or a temporary directory

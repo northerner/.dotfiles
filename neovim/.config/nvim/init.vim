@@ -1,38 +1,41 @@
-" color scheme
+" Color scheme
 set background=dark
 set termguicolors
 colorscheme NeoSolarized
+ 
 
-" aliases
+" Aliases
+" Expand %% to current directory
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+" Map cursor keys to next and previous buffers
 nnoremap <right> :bn<cr>
 nnoremap <left> :bp<cr>
+
+" Set , as leader key
 let mapleader = ","
+
+" Use ,, to toggle to the last buffer
+nnoremap <leader><leader> <c-^>
+
+" Map ; to : in normal mode, saves pressing shift to get to command line
 nnoremap ; :
+
+" Use ,p to enter paste mode
 nnoremap <leader>p :set paste!<cr>
-map <leader>ba :1,300 bd!<cr>
+
+" Map jj to escape, useful for reducing strain
 inoremap jj <Esc>
-" toggle gundo
-nnoremap <leader>u :GundoToggle<CR>
 
-" vimux commands
-" Run the current file with rspec
-map <Leader>rb :call VimuxRunCommand("clear; rspec " . bufname("%"))<CR>
-" Prompt for a command to run
-map <Leader>vp :VimuxPromptCommand<CR>
-" Run last command executed by VimuxRunCommand
-map <Leader>vl :VimuxRunLastCommand<CR>
-" Inspect runner pane
-map <Leader>vi :VimuxInspectRunner<CR>
-" Close vim tmux runner opened by VimuxRunCommand
-map <Leader>vq :VimuxCloseRunner<CR>
-" Interrupt any command running in the runner pane
-map <Leader>vx :VimuxInterruptRunner<CR>
-" Zoom the runner pane (use <bind-key> z to restore runner pane)
-map <Leader>vz :call VimuxZoomRunner()<CR>
+" Use ctrl+p to open fzf (fuzzy finder) files search
+nnoremap <C-p> :GFiles<Cr>
+
+" Use ctrl+g to open fzf (fuzzy finder) in-file search with ripgrep
+nnoremap <C-g> :Rg<Cr>
 
 
-" plugins
+" Plugins
+" Install vim-plug if missing
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -40,27 +43,40 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin()
+" Color scheme
 Plug 'iCyMind/NeoSolarized'
 
+" Symbols in left margin showing git diff status
 Plug 'airblade/vim-gitgutter'
+
+" Close structures like if blocks automatically with end keyword
 Plug 'tpope/vim-endwise'
+
+" Git commands like :Gdiff and :Gblame
 Plug 'tpope/vim-fugitive'
+
+" tpop's vim defaults
 Plug 'tpope/vim-sensible'
+
+" Status line with current file details
 Plug 'bling/vim-airline'
+
+" fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 Plug 'tpope/vim-commentary'
 Plug 'ervandew/supertab'
-Plug 'benmills/vimux'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sjl/gundo.vim'
-Plug 'posva/vim-vue'
-Plug 'kchmck/vim-coffee-script'
+Plug 'mhinz/vim-startify'
 
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'elmcast/elm-vim'
 Plug 'idris-hackers/idris-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'elixir-lang/vim-elixir'
-Plug 'slim-template/vim-slim'
+Plug 'posva/vim-vue'
+Plug 'kchmck/vim-coffee-script'
 call plug#end()
 
 highlight clear SignColumn

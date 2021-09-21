@@ -33,6 +33,9 @@ nnoremap <C-p> :GFiles<Cr>
 " Use ctrl+g to open fzf (fuzzy finder) in-file search with ripgrep
 nnoremap <C-g> :Rg<Cr>
 
+" format JSON
+com! FormatJSON %!python -m json.tool
+
 
 " Plugins
 " Install vim-plug if missing
@@ -70,6 +73,7 @@ Plug 'ervandew/supertab'
 Plug 'sjl/gundo.vim'
 Plug 'mhinz/vim-startify'
 
+Plug 'vim-ruby/vim-ruby'
 Plug 'dense-analysis/ale'
 Plug 'elmcast/elm-vim'
 Plug 'idris-hackers/idris-vim'
@@ -90,6 +94,9 @@ let g:ale_fixers = {
 \}
 let g:airline#extensions#ale#enabled = 1
 
+"" Switch to git directory when selecting file in startify
+let g:startify_change_to_vcs_root = 1
+
 " settings
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 set cul
@@ -100,7 +107,7 @@ set nowrap
 set exrc
 set secure
 
-au BufNewFile,BufRead *.py
+" au BufNewFile,BufRead *.py
 \ set tabstop=4 |
 \ set softtabstop=4 |
 \ set shiftwidth=4 |

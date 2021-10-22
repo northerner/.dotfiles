@@ -33,6 +33,9 @@ nnoremap <C-p> :GFiles<Cr>
 " Use ctrl+g to open fzf (fuzzy finder) in-file search with ripgrep
 nnoremap <C-g> :Rg<Cr>
 
+" Use ctrl+space to open buffer tree view
+nnoremap <C-Space> :Tree<Cr>
+
 " format JSON
 com! FormatJSON %!python -m json.tool
 
@@ -63,6 +66,9 @@ Plug 'tpope/vim-sensible'
 
 " Status line with current file details
 Plug 'bling/vim-airline'
+
+" Tree view of open buggers
+Plug 'el-iot/buffer-tree-explorer'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -96,6 +102,9 @@ let g:airline#extensions#ale#enabled = 1
 
 "" Switch to git directory when selecting file in startify
 let g:startify_change_to_vcs_root = 1
+
+" Compress view buffer-tree-explorer
+let g:buffer_tree_explorer_compress = 1
 
 " settings
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2

@@ -112,9 +112,11 @@ set cul
 set laststatus=2
 set number
 set noswapfile
-set nowrap
 set exrc
 set secure
+
+" Wrap lines while preserving indentation and breaking lines on spaces
+set wrap linebreak breakindent
 
 " au BufNewFile,BufRead *.py
 \ set tabstop=4 |

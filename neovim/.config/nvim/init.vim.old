@@ -50,7 +50,7 @@ endif
 
 call plug#begin()
 " Color scheme
-Plug 'iCyMind/NeoSolarized'
+Plug 'overcache/NeoSolarized'
 
 " Symbols in left margin showing git diff status
 Plug 'airblade/vim-gitgutter'
@@ -66,9 +66,6 @@ Plug 'tpope/vim-sensible'
 
 " Status line with current file details
 Plug 'bling/vim-airline'
-
-" Tree view of open buggers
-Plug 'el-iot/buffer-tree-explorer'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

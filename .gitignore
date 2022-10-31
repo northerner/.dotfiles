@@ -1,3 +1,5 @@
 tokens
 neovim/.config/nvim/plugged
 neovim/.config/nvim/colors
+neovim/.config/nvim/plugin
+.DS_Store

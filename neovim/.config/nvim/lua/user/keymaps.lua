@@ -39,6 +39,13 @@ keymap("n", ";", ":", opts)
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Git
+keymap("n", "<leader>b", "<cmd>Gitsigns blame_line", opts)
+
+-- Test
+keymap("n", "<leader>t", "<cmd>TestNearest<cr>", opts)
+keymap("n", "<leader>T", "<cmd>TestFile<cr>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
@@ -59,3 +66,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Command --
+-- Expand current path --
+keymap("c", "%%", "<C-R>=expand('%:h').'/'<cr>", opts)

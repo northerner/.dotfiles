@@ -46,7 +46,6 @@ return packer.startup(function(use)
   -- Misc
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "akinsho/bufferline.nvim" -- A custom tab-style buffer line
   use "nvim-lualine/lualine.nvim" -- A status line
@@ -57,8 +56,12 @@ return packer.startup(function(use)
   use "EdenEast/nightfox.nvim" -- Dark colorscheme inspired by TokyoNight
 
   -- Completions
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
+  use {
+    "ms-jpq/coq_nvim", branch = 'coq'
+  }
+  use {
+    "ms-jpq/coq.artifacts", branch = 'artifacts'
+  }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP

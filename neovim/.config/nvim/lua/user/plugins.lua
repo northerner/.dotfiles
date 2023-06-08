@@ -49,8 +49,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "akinsho/bufferline.nvim" -- A custom tab-style buffer line
   use "nvim-lualine/lualine.nvim" -- A status line
-  use "kyazdani42/nvim-web-devicons" -- Icons for tree file explorer
-  use "kyazdani42/nvim-tree.lua" -- A file explorer
+  use "nvim-tree/nvim-web-devicons" -- Icons for tree file explorer
+  use "nvim-tree/nvim-tree.lua" -- A file explorer
 
   -- Colorscheme
   use "EdenEast/nightfox.nvim" -- Dark colorscheme inspired by TokyoNight
@@ -70,6 +70,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter
   use {

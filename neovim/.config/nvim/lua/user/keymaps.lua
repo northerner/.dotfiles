@@ -40,7 +40,7 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Git
-keymap("n", "<leader>b", "<cmd>Gitsigns blame_line", opts)
+keymap("n", "<leader>b", "<cmd>Gitsigns blame_line<CR>", opts)
 
 -- Test
 keymap("n", "<leader>t", "<cmd>TestNearest<cr>", opts)

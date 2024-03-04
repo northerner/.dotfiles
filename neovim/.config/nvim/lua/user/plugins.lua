@@ -51,7 +51,6 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- A status line
   use "nvim-tree/nvim-web-devicons" -- Icons for tree file explorer
   use "nvim-tree/nvim-tree.lua" -- A file explorer
-
   -- Colorscheme
   use "EdenEast/nightfox.nvim" -- Dark colorscheme inspired by TokyoNight
 

@@ -1,0 +1,12 @@
+[[grammar]]
+name = "haml"
+source = { git = "https://github.com/croaky/tree-sitter-haml", rev = "b7f762fb67aa86c6af9ed1a6e702bdac126f8090" }
+
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
+
+[[language]]
+name = "ruby"
+language-servers = ["ruby-lsp"]
+auto-format = true

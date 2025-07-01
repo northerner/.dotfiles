@@ -8,7 +8,7 @@
   status = auto
   branch = auto
 [core]
-  editor = nvim
+  editor = hx
 [github]
   user = northerner
 [push]
